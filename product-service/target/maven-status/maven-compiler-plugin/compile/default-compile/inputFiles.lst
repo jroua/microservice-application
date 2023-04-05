@@ -1,0 +1,7 @@
+/home/roua/Bureau/project/microservices-new/product-service/src/main/java/com/example/productservice/ProductServiceApplication.java
+/home/roua/Bureau/project/microservices-new/product-service/src/main/java/com/example/productservice/model/Product.java
+/home/roua/Bureau/project/microservices-new/product-service/src/main/java/com/example/productservice/repository/ProductRepository.java
+/home/roua/Bureau/project/microservices-new/product-service/src/main/java/com/example/productservice/controller/ProductController.java
+/home/roua/Bureau/project/microservices-new/product-service/src/main/java/com/example/productservice/dto/ProductResponse.java
+/home/roua/Bureau/project/microservices-new/product-service/src/main/java/com/example/productservice/dto/ProductRequest.java
+/home/roua/Bureau/project/microservices-new/product-service/src/main/java/com/example/productservice/service/ProductService.java

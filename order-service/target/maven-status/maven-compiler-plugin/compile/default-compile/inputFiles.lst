@@ -1,0 +1,10 @@
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/repository/OrderRepository.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/dto/OrderRequest.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/dto/OrderLineItemsDto.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/dto/InventoryResponse.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/controller/OrderController.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/model/Order.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/model/OrderLineItems.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/config/WebClientConfig.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/service/OrderService.java
+/home/roua/Bureau/project/microservices-new/order-service/src/main/java/com/example/orderservice/OrderServiceApplication.java
