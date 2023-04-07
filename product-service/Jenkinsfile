@@ -1,0 +1,18 @@
+pipeline{
+    agent any
+    
+    stages {
+        stage('code checkout') {
+         steps {
+           git branch: 'master', credentialsId:'github-token', url: 'https://github.com/jroua/microservice-application.git'
+              }
+        } 
+      stage('create jar') {
+         steps {
+            
+              //builds the maven project and packages them into a JAR
+             sh ' ./mvnw clean package '
+              }
+         }
+    }
+}
