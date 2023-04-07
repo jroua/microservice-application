@@ -11,8 +11,7 @@ pipeline{
       stage('create jar') {
          steps {
              sh ' cd product-service '
-              //builds the maven project and packages them into a JAR
-             sh ' mvn package '
+             sh ' mvn clean '
               }
          }
     }
