@@ -11,7 +11,7 @@ pipeline{
          steps {
             
               //builds the maven project and packages them into a JAR
-             sh ' ./mvnw clean package '
+             sh ' mvn package '
               }
          }
     }
