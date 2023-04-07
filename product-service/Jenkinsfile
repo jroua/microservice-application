@@ -4,13 +4,13 @@ pipeline{
     stages {
         stage('code checkout') {
          steps {
-           //git branch: 'main', credentialsId:'github-token', url: 'https://github.com/jroua/microservice-application/product-service'
-              git branch: "${env.BRANCH_NAME}", url: "${env.REPO_URL}" , credentialsId:'github-token'
+            git branch: 'main', credentialsId:'github-token', url: 'https://github.com/jroua/microservice-application.git'
+              //git branch: "${env.BRANCH_NAME}", url: "${env.REPO_URL}" , credentialsId:'github-token'
               }
         } 
       stage('create jar') {
          steps {
-            
+             sh ' cd product-service '
               //builds the maven project and packages them into a JAR
              sh ' mvn package '
               }
