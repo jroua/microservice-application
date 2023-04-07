@@ -10,7 +10,7 @@ pipeline{
       stage('create jar') {
          steps {
              sh ' cd product-service '
-             sh ' mvn -v '
+             sh ' mvn package '
               }
          }
     }
