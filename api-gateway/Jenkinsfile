@@ -1,0 +1,26 @@
+pipeline{
+    agent any
+    tools { 
+        maven 'maven' // nom de l'installation de maven dans jenkins ( maven 3.8.8 )
+        jdk 'java' // nom de l'installation de java dans jenkins ( java 17 )
+    }
+    stages {
+       stage('code checkout') {
+         steps {
+            git branch: 'main', credentialsId:'github-token', url: 'https://github.com/jroua/microservice-application.git'
+              }
+        } 
+      stage('create jar') {
+         steps {
+             sh ' cd api-gateway && mvn clean && mvn package '
+          //   sh ' mvn clean package '
+              }
+         }
+      stage('build dockerfile') {
+              steps {
+               sh' docker build -t svc/apigateway ./api-gateway'
+             }
+         }
+       
+    }
+}
