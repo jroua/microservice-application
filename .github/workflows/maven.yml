@@ -43,6 +43,6 @@ jobs:
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
     - name: Build and push
-      run: docker build -t ./order-service
+      run: docker build ./order-service
     - name: Docker Push
       run: docker push $DOCKER_USER/$REPO_NAME
