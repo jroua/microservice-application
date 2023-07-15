@@ -45,6 +45,6 @@ jobs:
     - name: Build 
       run: docker build -t order-service:latest ./order-service
     - name: Tag the image
-      run: docker tag order-service:latest $DOCKER_USERNAME/order-service
+      run: docker tag order-service:latest ${{ secrets.DOCKER_USERNAME }}/order-service
     - name: Docker Push
-      run: docker push $DOCKER_USERNAME/order-service
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/order-service
