@@ -45,4 +45,4 @@ jobs:
     - name: Build and push
       run: docker build ./order-service
     - name: Docker Push
-      run: docker push $DOCKER_USER/$REPO_NAME
+      run: docker push $DOCKER_USERNAME/$REPO_NAME
