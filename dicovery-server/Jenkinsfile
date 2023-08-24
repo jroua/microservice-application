@@ -2,7 +2,7 @@ pipeline{
     agent any
     tools { 
         maven 'maven' // nom de l'installation de maven dans jenkins ( maven 3.8.8 )
-        jdk 'java' // nom de l'installation de java dans jenkins ( java 17 )
+        jdk 'JAVA_HOME' // nom de l'installation de java dans jenkins ( java 17 )
     }
     stages {
        stage('code checkout') {
