@@ -10,6 +10,14 @@ pipeline{
             git branch: 'main', credentialsId:'github-token', url: 'https://github.com/jroua/microservice-application.git'
               }
         } 
+     stage('Merge main into prod') {
+       steps {
+        // Merge the "main" branch into "prod"
+        script {
+            sh 'git merge main'
+        }
+    }
+     }
       stage('create jar') {
          steps {
              sh ' cd discovery-service && mvn clean && mvn package '
